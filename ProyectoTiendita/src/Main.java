@@ -8,7 +8,7 @@ public class Main {
      */
     public static void main(String[] args) {
         ControlProductos mControl = new ControlProductos();
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = ControlProductos.teclado;
 
         int opcion = 0;
         do {
@@ -17,7 +17,7 @@ public class Main {
             System.out.println("2-Ver lista");
             System.out.println("3-Buscar");
             System.out.println("Selecciona la opcion ");
-            opcion = teclado.nextInt();
+            opcion = Integer.parseInt(teclado.nextLine());
 
             switch (opcion) {
                 case 1 -> mControl.agregar();
