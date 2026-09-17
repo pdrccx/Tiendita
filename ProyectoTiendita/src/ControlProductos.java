@@ -23,6 +23,15 @@ public class ControlProductos {
     void buscar() {
         throw new UnsupportedOperationException("En construcción."); 
     }
-    
-    
+
+    void total(){
+        float total = 0f;
+        for (Producto p : listaProductos) {
+            total += p.getPrecio();
+        }
+        System.out.println("Total de productos: $" + total);
+    }
 }
+    
+    
+
