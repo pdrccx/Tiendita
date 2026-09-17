@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Main {
@@ -8,12 +7,8 @@ public class Main {
      */
     public static void main(String[] args) {
         ControlProductos mControl = new ControlProductos();
-<<<<<<< HEAD
-        Scanner teclado = ControlProductos.teclado;
-=======
         mControl.inicializar();
-        Scanner teclado = new Scanner(System.in);
->>>>>>> 19f8b149f2d269bb2e3cdcdb7bfe141f5601b285
+        Scanner teclado = ControlProductos.teclado;
 
         int opcion = 0;
         do {
@@ -22,6 +17,8 @@ public class Main {
             System.out.println("2-Ver lista");
             System.out.println("3-Buscar");
             System.out.println("4-Organizar");
+            System.out.println("5-Total");
+            System.out.println("0-Salir");
             System.out.println("Selecciona la opcion ");
             opcion = Integer.parseInt(teclado.nextLine());
 
@@ -30,7 +27,7 @@ public class Main {
                 case 2 -> mControl.ver();
                 case 3 -> mControl.buscar();
                 case 4 -> mControl.organizar(teclado);
-
+                case 5 -> mControl.total();
             }
         } while (opcion != 0);
     }
