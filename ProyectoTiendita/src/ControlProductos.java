@@ -17,8 +17,12 @@ public class ControlProductos {
     }
 
     void ver() {
-        throw new UnsupportedOperationException("En construcción."); 
+         System.out.println("CODIGO\tDESCRIPCION\tPRECIO");
+
+    	 for (Producto producto : listaProductos) {
+         System.out.println(producto);
     }
+}
 
     void buscar() {
         throw new UnsupportedOperationException("En construcción."); 
