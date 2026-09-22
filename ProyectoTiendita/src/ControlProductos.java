@@ -54,9 +54,14 @@ public class ControlProductos {
         }
     }
 
-    if (!encontrado) {
-        System.out.println("No se encontró ningún producto con ese código.");
+    void total(){
+        float total = 0f;
+        for (Producto p : listaProductos) {
+            total += p.getPrecio();
+        }
+        System.out.println("Total de productos: $" + total);
     }
 }
     
-}
+    
+
