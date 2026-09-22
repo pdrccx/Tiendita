@@ -22,6 +22,7 @@ public class ControlProductos {
     }
 
     void buscar() {
+        //Metodo para buscar
     Scanner sc = new Scanner(System.in);
     System.out.print("Ingresa el código del producto a buscar: ");
     int codigoBuscado = sc.nextInt();
